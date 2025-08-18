@@ -10,14 +10,6 @@
   --fs-600: 1.75rem;
   --fs-900: 2.125rem;
 
-  /*large screen font-sizes*/
-  --fs-200: 0.75rem;
-  --fs-300: 1rem;
-  --fs-400: 1.25rem;
-  --fs-500: 1.75rem;
-  --fs-600: 2.125rem;
-  --fs-900: 4.25rem;
-
   --fw-200: 200;
   --fw-300: 300;
   --fw-400: 400;
@@ -34,6 +26,15 @@
   --clr-primary-400: #8ea8da;
 
   --br: 1rem;
+}
+
+@media (min-width: 40em) {
+  :root {
+    /*large screen font-sizes*/
+    --fs-500: 1.75rem;
+    --fs-600: 2.125rem;
+    --fs-900: 4.25rem;
+  }
 }
 
 /* reset */
