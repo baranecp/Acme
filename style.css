@@ -69,6 +69,13 @@ ol[class] {
   padding: 0;
 }
 
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -122,8 +129,25 @@ h3,
 
 .btn {
   display: inline-block;
+  cursor: pointer;
+  border: 0;
+  background: none;
+  font-weight: var(--fw-700);
+  font-size: var(--fs-300);
+  font-family: var(--ff-sans);
   text-decoration: none;
   color: var(--clr-neutral-900);
+}
+
+.btn::after {
+  content: "\203A";
+  margin-left: 1em;
+  font-weight: var(--fw-300);
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--clr-primary-400);
 }
 
 /* general layout*/
@@ -184,6 +208,41 @@ section {
   font-weight: var(--fw-400);
   font-size: var(--fs-200);
   color: var(--clr-neutral-400);
+}
+
+.call-to-action form {
+  margin-top: 3rem;
+  display: flex;
+  gap: 3rem;
+}
+
+.call-to-action form > div {
+  flex-basis: 100%;
+  flex-shrink: 1;
+  flex-grow: 1;
+}
+
+.call-to-action input {
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid var(--clr-neutral-300);
+}
+
+.call-to-action input:focus {
+  border-color: var(--clr-primary-400);
+  border-width: 4px;
+}
+
+.call-to-action input::placeholder {
+  color: var(--clr-neutral-300);
+  opacity: 1;
+}
+
+.call-to-action label {
+  display: block;
+  margin-bottom: 0.5em;
+  font-size: var(--fs-300);
+  font-weight: var(--fw-400);
 }
 
 /* homepage styles*/
