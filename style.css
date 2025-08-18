@@ -73,13 +73,21 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+  border-radius: var(--br);
 }
 
 body {
   line-height: 1.4;
   font-family: var(--ff-sans);
   font-size: var(--fs-400);
+  font-weight: var(--fw-300);
   padding: 1.5rem;
+}
+
+.bg-primary-300 {
+  background-color: var(--clr-primary-300);
+  border-radius: 1rem;
+  padding-inline: 1rem;
 }
 
 /* typography */
@@ -136,4 +144,50 @@ section {
 
 .flow-content > * + * {
   margin-top: var(--flow-spacer, 1em);
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.split > * {
+  flex-basis: 100%;
+}
+
+@media (min-width: 40em) {
+  .split {
+    flex-direction: row;
+  }
+}
+
+.xl-space {
+  margin-top: 5rem;
+}
+
+/* component*/
+
+.article-preview h3 {
+  font-size: var(--fs-500);
+}
+
+.article-preview img {
+  object-fit: cover;
+  height: 12.5rem;
+  width: 100%;
+}
+
+.article-preview .article-info {
+  display: flex;
+  gap: 2rem;
+  font-weight: var(--fw-400);
+  font-size: var(--fs-200);
+  color: var(--clr-neutral-400);
+}
+
+/* homepage styles*/
+
+.intro {
+  --flow-spacer: 2em;
 }
