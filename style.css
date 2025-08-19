@@ -281,6 +281,30 @@ section {
   }
 }
 
+.secondary-navigation {
+  display: flex;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.secondary-navigation > a.btn {
+  margin-left: auto;
+}
+
+.categories {
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.categories button {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: var(--fs-200);
+  border: 0;
+  background: none;
+}
+
 .article-preview h3 {
   font-size: var(--fs-500);
 }
