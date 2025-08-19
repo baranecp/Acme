@@ -205,9 +205,31 @@ section {
 
 .primary-header {
   background-color: var(--clr-primary-400);
+  background-size: cover;
   padding: 2rem;
   min-height: 50vh;
   border-radius: var(--br);
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-header .container {
+  width: 100%;
+  margin-block: auto;
+}
+
+.primary-header .container > * {
+  max-width: 12ch;
+}
+
+.page-home .primary-header {
+  background-image: url(img/hero.jpg);
+  background-position: center center;
+}
+
+.page-blog .primary-header {
+  background-image: url(img/blog.jpg);
+  background-position: center left;
 }
 
 .primary-nav {
